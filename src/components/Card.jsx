@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import Backup from "../assests/backup.png";
 
 export const Card = ({ movie }) => {
-  const { id, original_title, overview } = movie;
-  const image = movie.poster_path
-    ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+  const { id, original_title, overview, poster_path } = movie;
+  const image = poster_path
+    ? `https://image.tmdb.org/t/p/w500/${poster_path}`
     : Backup;
 
   return (

@@ -1,20 +1,34 @@
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import PageNotFoundImage from "../assests/pagenotfound.png";
+import { Button } from "../components/Button";
+
 export const PageNotFound = () => {
+  useEffect(() => {
+    document.title = `Page Not Found / Cinemate`;
+  });
+
   return (
     <main>
-      <h1>Error 404!!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-        illum distinctio soluta fuga? Sapiente, eveniet. Voluptatem inventore ea
-        repellat itaque earum quod. Laboriosam libero sed doloribus perspiciatis
-        iure. Voluptas nam modi iste praesentium, voluptatum, earum ut delectus
-        reiciendis quia odio quo deleniti pariatur ipsa alias quibusdam, neque
-        eius harum et cupiditate. A temporibus atque, minima eos veniam aperiam
-        corrupti reiciendis hic ad non? Animi cupiditate officiis atque
-        quisquam, ab a eaque similique delectus quo ratione, dolor minima alias
-        amet doloremque labore optio odio vero sequi consectetur, quis eligendi
-        cumque? Eveniet deleniti, unde eaque minima cupiditate fugit culpa
-        placeat laborum quas.
-      </p>
+      <section className="flex flex-col justify-center px-2">
+        <div className="flex flex-col items-center my-4">
+          <p className="text-7xl text-gray-700 font-bold my-10 dark:text-white">
+            404, Oops!
+          </p>
+          <div className="max-w-lg">
+            <img
+              className="rounded"
+              src={PageNotFoundImage}
+              alt="404 Page Not Found"
+            />
+          </div>
+        </div>
+        <div className="flex justify-center my-4">
+          <Link to="/">
+            <Button>Back To Cinemate</Button>
+          </Link>
+        </div>
+      </section>
     </main>
   );
 };
