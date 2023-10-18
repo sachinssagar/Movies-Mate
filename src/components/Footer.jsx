@@ -15,8 +15,9 @@ export const Footer = () => {
           <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
             <li>
               <a
-                href="#"
+                href="https://github.com/sachinssagar"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-4 hover:underline md:mr-6 "
               >
                 Instagram
@@ -24,8 +25,9 @@ export const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://github.com/sachinssagar"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-4 hover:underline md:mr-6"
               >
                 FaceBook
@@ -33,15 +35,21 @@ export const Footer = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/itssachinsagar/"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="mr-4 hover:underline md:mr-6"
               >
                 LinkedIn
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" className="hover:underline">
+              <a
+                href="https://github.com/sachinssagar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 GitHub
               </a>
             </li>
